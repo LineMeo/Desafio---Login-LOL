@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100%;
+}
+
+.login {
+    margin-left: 10px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login figure img {
+    width: 150px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 160px;
+}
+
+input {
+    background-color: #E8E6E6;
+    width: 230px;
+    height: 50px;
+    border: none;
+}
+
+input::placeholder {
+    position: relative;
+    bottom: 22%;
+    left: 3%;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 240px;
+}
+
+.social-media img {
+    width: 20px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.facebook {
+    background-color: #2051FF;
+    border-radius: 5px;
+    width: 70px;
+}
+
+.google {
+    background-color: #8A0000;
+    border-radius: 5px;
+    width: 70px;
+}
+
+.apple {
+    background-color: #000000;
+    border-radius: 5px;
+    width: 70px;
+}
+
+.conectado {
+    margin-top: 20px;
+    width: 240px;
+    height: 50px;
+    display: flex;
+    align-items: left;
+}
+
+.conectado input {
+    width: 20px;
+}
+
+.conectado label {
+    margin-top: 15px;
+    margin-left: 8px;
+    font-weight: 700;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #FF002E36;
+    border: none;
+}
+
+.show {
+    background-color: #FF002E;
+}
+
+button img {
+    width: 40px;
+}
+
+p {
+    margin-top: 8px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: red;
+}
+
+.imagem-prin {
+    margin-left: 9px;
+}
+
+.principal img {
+    height: 600px;
+}
+
+.responsivo1,
+.responsivo2 {
+    display: none;
+}
+
+@media(max-width:600px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+    .login figure img {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .social-media {
+        margin-top: 5px;
+    }
+    .conectado {
+        margin-top: 10px;
+    }
+    button {
+        margin-top: 5px;
+    }
+    .imagem-prin {
+        margin-top: 15px;
+    }
+    .principal,
+    .responsivo2 {
+        display: none;
+    }
+    .responsivo1 {
+        display: initial;
+    }
+    .responsivo1 img {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media(max-width:400px) {
+    .principal,
+    .responsivo1 {
+        display: none;
+    }
+    .responsivo2 {
+        display: initial;
+    }
+}
